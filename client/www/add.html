@@ -1,0 +1,32 @@
+<div class="section">
+	<div class="add-container">
+		<div class="list">
+		<ul>
+			<li  ng-repeat="item in giftCodes">{{item.code}}</li>
+		</ul>
+		</div>
+		<form class="input-group">
+			<input type="text" ng-model="giftCode.code">
+			<button type="submit" ng-click="addCode()">Add</button>
+		</form>
+	</div>
+	<div class="link-container">
+		<form class="input-group">
+			<input type="text" ng-model="link.toGo">
+			<button type="submit" ng-click="changeLink()">Change</button>
+		</form>
+	</div>
+</div>
+<style>
+	.section{
+		clear: both;
+	}
+	.add-container{
+		float: left;
+		width: 50%
+	}
+	.link-container{
+		width: 50%;
+		float: left;
+	}
+</style>
